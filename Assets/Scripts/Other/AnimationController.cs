@@ -28,7 +28,7 @@ public class AnimationController : MonoBehaviour
         _logoBack.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
 
-        float maxTime = 2f;
+        float maxTime = 1.5f;
         float timer = 0f;
         Vector4 color = _logoBack.color;
         

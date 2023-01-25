@@ -1444,7 +1444,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1595,8 +1595,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589336149}
-        m_TargetAssemblyTypeName: ChatSettings, Assembly-CSharp
+      - m_Target: {fileID: 1589336157}
+        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetActiveSettings
         m_Mode: 6
         m_Arguments:
@@ -1662,7 +1662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1024431613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2082,8 +2082,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589336149}
-        m_TargetAssemblyTypeName: ChatSettings, Assembly-CSharp
+      - m_Target: {fileID: 1589336157}
+        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetActiveSettings
         m_Mode: 6
         m_Arguments:
@@ -2335,6 +2335,7 @@ GameObject:
   - component: {fileID: 1589336151}
   - component: {fileID: 1589336150}
   - component: {fileID: 1589336149}
+  - component: {fileID: 1589336157}
   - component: {fileID: 1589336155}
   - component: {fileID: 1589336154}
   m_Layer: 0
@@ -2357,36 +2358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTokens: 2000
-  _animator: {fileID: 1589336154}
-  _animCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.40502167
-      value: 0
-      inSlope: 1.6807334
-      outSlope: 1.6807334
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1.6807334
-      outSlope: 1.6807334
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _exitBtn: {fileID: 169434640}
   _tokenInput: {fileID: 0}
   _settingWindowObj: {fileID: 1024431612}
-  _logoBg: {fileID: 1887150513}
-  _logo: {fileID: 903173612}
 --- !u!114 &1589336150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2515,6 +2489,96 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1589336157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589336147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9bc480d2f6d944aff6215da2f5da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1589336154}
+  _fadeBack:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.000412
+      inSlope: -0.0027575989
+      outSlope: -0.0027575989
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8972258
+      value: 0.9979378
+      inSlope: -0.06999597
+      outSlope: -0.06999597
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1145679
+      outWeight: 0.34524658
+    - serializedVersion: 3
+      time: 1
+      value: -0.0004196167
+      inSlope: -9.714086
+      outSlope: -9.714086
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _fadeText:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.5874202
+      outSlope: 2.5874202
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3875217
+      value: 1.0026815
+      inSlope: -0.0024152298
+      outSlope: -0.0024152298
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.5720856
+    - serializedVersion: 3
+      time: 0.71147454
+      value: 0.80268157
+      inSlope: -1.2599908
+      outSlope: -1.2599908
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: -0.0014801025
+      inSlope: -2.7871428
+      outSlope: -2.7871428
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _logoBack: {fileID: 1887150513}
+  _logoText: {fileID: 903173612}
 --- !u!1 &1607227390
 GameObject:
   m_ObjectHideFlags: 0
